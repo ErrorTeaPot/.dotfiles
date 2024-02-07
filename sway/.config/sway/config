@@ -217,7 +217,13 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+# Remove title bars
 default_border none
+# Add gaps around and between windows
 gaps outer 2
 gaps inner 2
+# Volume keybinds
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pipewire sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pipewire sset Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -D pipewire set Master 0% mute 
 include /etc/sway/config.d/*
