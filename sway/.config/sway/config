@@ -57,7 +57,10 @@ output DP-2 res 1920x1080@144.001Hz pos 1920,0
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-
+input "13364:785:Keychron_Keychron_V1" {
+	xkb_layout us
+	xkb_variant intl
+}
 ### Key bindings
 #
 # Basics:
