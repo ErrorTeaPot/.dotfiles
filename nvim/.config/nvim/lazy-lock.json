@@ -1,0 +1,6 @@
+{
+  "indentmini.nvim": { "branch": "main", "commit": "b18d7168e59dbe8700649e2d58022432d8fde2e2" },
+  "lazy.nvim": { "branch": "main", "commit": "83493db50a434a4c5c648faf41e2ead80f96e478" },
+  "nvim-tree.lua": { "branch": "master", "commit": "d35a8d5ec6358ada4b058431b367b32360737466" },
+  "nvim-web-devicons": { "branch": "master", "commit": "75df79feb02d5e0ec114e447453775d4d291ea03" }
+}
