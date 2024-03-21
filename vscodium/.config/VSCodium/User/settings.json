@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Default Light Modern",
+    "workbench.preferredHighContrastColorTheme": "Default Light Modern",
+    "workbench.startupEditor": "none",
+    "terminal.external.linuxExec": "fish",
+    "window.zoomLevel": 1,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'monospace', monospace",
+    "terminal.integrated.cursorStyle": "line",
+    "workbench.iconTheme": "material-icon-theme"
+}
