@@ -1,25 +1,18 @@
-[aws]
-style = "bold #ffb86c"
+palette = "material"
 
 [character]
 error_symbol = "[🌶️](bold #ff5555)"
 success_symbol = "[🌶️](bold #50fa7b)"
 
-[cmd_duration]
-style = "bold #f1fa8c"
-
-[directory]
-style = "bold #50fa7b"
-
-[git_branch]
-style = "bold #ff79c6"
-
-[git_status]
-style = "bold #ff5555"
-
-[hostname]
-style = "bold #bd93f9"
-
 [username]
 format = "[$user]($style) on "
-style_user = "bold #8be9fd"
+
+[palettes.material]
+black   = '#666666'
+red     = '#eb606b'
+green   = '#c3e88d'
+yellow  = '#f7eb95'
+blue    = '#80cbc4'
+magenta = '#ff2f90'
+cyan    = '#aeddff'
+white   = '#ffffff'

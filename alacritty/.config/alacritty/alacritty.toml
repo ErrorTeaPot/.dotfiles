@@ -1,5 +1,9 @@
 import = [
-	"~/.config/alacritty/catpuccin-frappe.toml"
+	#"~/.config/alacritty/catpuccin-frappe.toml"
+  #"~/.config/alacritty/rose-pine-moon.toml"
+  #"~/.config/alacritty/solarized_dark.toml"
+  "~/.config/alacritty/material_theme.toml"
+  #"~/.config/alacritty/gruvbox_dark.toml"
 ]
 live_config_reload = true
 
