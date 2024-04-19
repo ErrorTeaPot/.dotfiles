@@ -1,11 +1,14 @@
 import = [
 	"~/.config/alacritty/catpuccin-frappe.toml"
 ]
+live_config_reload = true
 
 [window]
 	opacity = 0.8
+	padding = {x=5,y=5}
+	decorations = "None"
 [font]
-	normal = {family = "CaskaydiaCove Nerd Font", style = "Regular"}
+	normal = {family = "terminal-font"}
 	size = 14.0
 
 [env]
