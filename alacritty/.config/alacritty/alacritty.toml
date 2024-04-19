@@ -17,3 +17,6 @@ live_config_reload = true
 
 [env]
 	TERM = "xterm-256color"
+
+[cursor]
+  style = {shape = "Beam", blinking = "On"}
