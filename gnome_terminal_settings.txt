@@ -1,0 +1,164 @@
+[legacy/profiles:]
+default='4f81c281-2dd8-4a4a-bcd1-98eb2fe64660'
+list=['67798acb-1b2c-41c1-8ed0-7ae3d4354b78', '908327ef-0f44-4a43-8858-9210929735f5', '4f81c281-2dd8-4a4a-bcd1-98eb2fe64660']
+
+[legacy/profiles:/:164f0fa8-9a4b-4ed8-9d43-b8d62dd32060]
+allow-bold=true
+audible-bell=false
+background-color='#1E1E28282C2C'
+background-transparency-percent=28
+bold-color='#C3C3C7C7D1D1'
+bold-color-same-as-fg=true
+cursor-background-color='#65657B7B8383'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#1E1E28282C2C'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 14'
+foreground-color='#C3C3C7C7D1D1'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#070736364141', '#EBEB60606B6B', '#C3C3E8E88D8D', '#F7F7EBEB9595', '#8080CBCBC3C3', '#FFFF24249090', '#AEAEDDDDFFFF', '#FFFFFFFFFFFF', '#00002B2B3636', '#EBEB60606B6B', '#C3C3E8E88D8D', '#F7F7EBEB9595', '#7D7DC6C6BFBF', '#6C6C7171C3C3', '#343443434D4D', '#FFFFFFFFFFFF']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Material'
+
+[legacy/profiles:/:4f81c281-2dd8-4a4a-bcd1-98eb2fe64660]
+allow-bold=true
+audible-bell=false
+background-color='#191917172424'
+background-transparency-percent=28
+bold-color='#E0E0DEDEF4F4'
+bold-color-same-as-fg=true
+cursor-background-color='#E0E0DEDEF4F4'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#191917172424'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 13'
+foreground-color='#E0E0DEDEF4F4'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#262623233A3A', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#313174748F8F', '#C4C4A7A7E7E7', '#EBEBBCBCBABA', '#E0E0DEDEF4F4', '#6E6E6A6A8686', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#313174748F8F', '#C4C4A7A7E7E7', '#EBEBBCBCBABA', '#E0E0DEDEF4F4']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Rosé Pine'
+
+[legacy/profiles:/:67798acb-1b2c-41c1-8ed0-7ae3d4354b78]
+allow-bold=true
+audible-bell=false
+background-color='#FAFAF4F4EDED'
+background-transparency-percent=28
+bold-color='#575752527979'
+bold-color-same-as-fg=true
+cursor-background-color='#575752527979'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#FAFAF4F4EDED'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 12'
+foreground-color='#575752527979'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#F2F2E9E9E1E1', '#B4B463637A7A', '#565694949F9F', '#EAEA9D9D3434', '#282869698383', '#90907A7AA9A9', '#D7D782827E7E', '#575752527979', '#98989393A5A5', '#B4B463637A7A', '#565694949F9F', '#EAEA9D9D3434', '#282869698383', '#90907A7AA9A9', '#D7D782827E7E', '#575752527979']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Rosé Pine Dawn'
+
+[legacy/profiles:/:6d8dd0be-cc33-4728-8f45-7e350cdb4a9b]
+allow-bold=true
+audible-bell=false
+background-color='#232321213636'
+background-transparency-percent=28
+bold-color='#E0E0DEDEF4F4'
+bold-color-same-as-fg=true
+cursor-background-color='#E0E0DEDEF4F4'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#232321213636'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 13'
+foreground-color='#E0E0DEDEF4F4'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#393935355252', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#3E3E8F8FB0B0', '#C4C4A7A7E7E7', '#EAEA9A9A9797', '#E0E0DEDEF4F4', '#6E6E6A6A8686', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#3E3E8F8FB0B0', '#C4C4A7A7E7E7', '#EAEA9A9A9797', '#E0E0DEDEF4F4']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Rosé Pine Moon'
+
+[legacy/profiles:/:7904a139-7f95-4754-8095-7f0843a14dbb]
+allow-bold=true
+audible-bell=false
+background-color='#191917172424'
+background-transparency-percent=28
+bold-color='#E0E0DEDEF4F4'
+bold-color-same-as-fg=true
+cursor-background-color='#E0E0DEDEF4F4'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#191917172424'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 14'
+foreground-color='#E0E0DEDEF4F4'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#262623233A3A', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#313174748F8F', '#C4C4A7A7E7E7', '#EBEBBCBCBABA', '#E0E0DEDEF4F4', '#6E6E6A6A8686', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#313174748F8F', '#C4C4A7A7E7E7', '#EBEBBCBCBABA', '#E0E0DEDEF4F4']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Rosé Pine'
+
+[legacy/profiles:/:908327ef-0f44-4a43-8858-9210929735f5]
+allow-bold=true
+audible-bell=false
+background-color='#232321213636'
+background-transparency-percent=28
+bold-color='#E0E0DEDEF4F4'
+bold-color-same-as-fg=true
+cursor-background-color='#E0E0DEDEF4F4'
+cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='#232321213636'
+cursor-shape='ibeam'
+font='CaskaydiaCove Nerd Font 12'
+foreground-color='#E0E0DEDEF4F4'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#393935355252', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#3E3E8F8FB0B0', '#C4C4A7A7E7E7', '#EAEA9A9A9797', '#E0E0DEDEF4F4', '#6E6E6A6A8686', '#EBEB6F6F9292', '#9C9CCFCFD8D8', '#F6F6C1C17777', '#3E3E8F8FB0B0', '#C4C4A7A7E7E7', '#EAEA9A9A9797', '#E0E0DEDEF4F4']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Rosé Pine Moon'
+
+[legacy/profiles:/:fda169a2-ff2b-453b-97fd-75378b532344]
+allow-bold=true
+use-theme-background=false
+use-theme-transparency=false
