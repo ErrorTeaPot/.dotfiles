@@ -1,9 +1,11 @@
 import = [
-	#"~/.config/alacritty/catpuccin-frappe.toml"
-  #"~/.config/alacritty/rose-pine-moon.toml"
-  #"~/.config/alacritty/solarized_dark.toml"
-  "~/.config/alacritty/material_theme.toml"
-  #"~/.config/alacritty/gruvbox_dark.toml"
+	#"~/.config/alacritty/themes/catpuccin-frappe.toml"
+	#"~/.config/alacritty/themes/rose-pine-moon.toml"
+	#"~/.config/alacritty/themes/solarized_dark.toml"
+	#"~/.config/alacritty/themes/material_theme.toml"
+	#"~/.config/alacritty/themes/gruvbox_dark.toml"
+	#"~/.config/alacritty/themes/monokai_pro.toml"
+	"~/.config/alacritty/themes/monokai.toml"
 ]
 live_config_reload = true
 
