@@ -193,6 +193,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
+vim.api.nvim_create_autocmd({ 'VimLeave', 'VimSuspend' }, {
+  pattern = '*',
+  command = 'set guicursor=n-v-c:beam,i-ci-ve:beam,r-cr:beam,o:beam,a:beam,sm:beam',
+})
+
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
@@ -568,7 +573,7 @@ require('lazy').setup({
         clangd = {},
         -- gopls = {},
         pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -778,13 +783,18 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'rose-pine/neovim',
+    -- 'rose-pine/neovim',
+    'polirritmico/monokai-nightasty.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'rose-pine-dawn'
+      -- vim.cmd.colorscheme 'rose-pine-dawn'
+      -- vim.cmd.colorscheme 'monokai-nightasty'
+
+      vim.opt.background = 'light' -- default to dark or light style
+      vim.cmd.colorscheme 'monokai-nightasty'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
