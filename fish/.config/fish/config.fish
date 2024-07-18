@@ -1,4 +1,4 @@
-fish_config theme choose "Dracula Official"
+fish_config theme choose "Rosé Pine Moon"
 
 if status is-interactive
 	starship init fish | source
