@@ -2,10 +2,7 @@
 
 Those are my dotfiles, there is the softwares I am curently using :
 
-- 🖥️ WM : hyprland
-- 🔔 Notifications : dunst
-- ℹ️ Topbar : waybar
-- 🚀 App launcher : fuzzel
+- 🖥️ DE : GNOME
 - 🐈 Terminal : alacritty
 - 🐟 Shell : fish
 - 💫 Shell prompt : starship
