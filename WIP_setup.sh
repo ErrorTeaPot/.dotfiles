@@ -1,10 +1,15 @@
 #!/bin/bash
 
 # List of packages to install
-packages=("libsecret" "gnome-keyring" "fish" "hyprland" "hyprlock", "neovim", "stow", "virt-manager")
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager"
 
-# Loop through the array and install each package
-for package in "${packages[@]}"
+# Install the packages
+sudo dnf install $packages
+
+# Check for directories and run stow if they exist
+for package in $packages
 do
-   sudo dnf install -y "$package"
+   if [ -d "$package" ]; then
+       stow "$package"
+   fi
 done
