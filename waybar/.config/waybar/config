@@ -2,11 +2,15 @@
 	"layer": "top",
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": [],
-	"modules-right": ["network", "wireplumber", "backlight", "battery", "tray", "clock"],
-	"network": {
+	"modules-right": ["custom/nm-applet", "wireplumber", "backlight", "battery", "tray", "clock"],
+    "custom/nm-applet":{
+    	"exec": "nm-applet",
+    },
+    "network": {
         "format-ethernet": "󰈁 {ifname}",
         "format-wifi": "  {essid}",
-        "format-disconnected": " Disconnected"
+        "format-disconnected": " Disconnected",
+	"on-click": "nm-applet",
     },
     "backlight": {
         "device": "aspci_video",

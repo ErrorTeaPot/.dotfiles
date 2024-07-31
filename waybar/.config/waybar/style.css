@@ -1,12 +1,4 @@
-/*
- ********************************************
- *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
- *░░█▀█░█░░░█░█░█▀▀░░░█░█░█░░░▀█▀░█▀▄░█▀█░░*
- *░░█▀▀░█░░░█░█░▀▀█░░░█░█░█░░░░█░░█▀▄░█▀█░░*
- *░░▀░░░▀▀▀░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░▀░░▀░▀░▀░▀░░*
- *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
- ********************************************
- */
+@import "./themes/rose-pine-dawn.css";
 
 * {
 	border: none;
@@ -30,10 +22,6 @@ window#waybar.hidden {
     padding-right: 16px;
 	border-radius: 26px;
 	transition: none;
-	/*
-    color: #f8f8f2;
-	background: #282a36;
-    */
     color: transparent;
 	background: transparent;
 }
@@ -43,26 +31,26 @@ window#waybar.hidden {
 	margin-left: 12px;
 	margin-bottom: 0;
 	border-radius: 26px;
-	background: #282a36;
+	background: @base;
 	transition: none;
 }
 
 #workspaces button {
 	transition: none;
-	color: #f8f8f2;
+	color: @text;
 	background: transparent;
 	font-size: 16px;
 }
 
 #workspaces button.focused {
-	color: #9aedfe;
+	color: @highlightMed;
 }
 
 #workspaces button:hover {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: #ff79c6;
+	color: @love;
 }
 
 #network {
@@ -73,8 +61,8 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #bd93f9;
+	color: @surface;
+	background: @gold;
 }
 
 #wireplumber {
@@ -85,8 +73,8 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #9aedfe;
+	color: @surface;
+	background: @love;
 }
 
 #backlight {
@@ -97,8 +85,8 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #5af78e;
+	color: @surface;
+	background: @rose;
 }
 
 #battery {
@@ -109,8 +97,8 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #f1fa8c;
+	color: @surface;
+	background: @pine;
 }
 
 #tray {
@@ -121,8 +109,8 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #ff6e67;
+	color: @surface;
+	background: @iris;
 }
 
 #clock {
@@ -134,7 +122,7 @@ window#waybar.hidden {
 	margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
-	color: #f8f8f2;
-	background: #282a36;
+	color: @surface;
+	background: @foam;
 }
 
