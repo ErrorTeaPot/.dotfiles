@@ -22,3 +22,6 @@ done
 
 # Enable lightdm service
 sudo systemctl enable lightdm.service
+
+# Change the target for the graphical one
+sudo systemctl set-default graphical.target
