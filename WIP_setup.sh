@@ -1,4 +1,10 @@
 #!/bin/bash
 
-sudo dnf install lightdm gnome-keyring libsecret
-systemctl enable --now --user gcr-ssh-agent.socket
+# List of packages to install
+packages=("libsecret" "gnome-keyring" "fish" "hyprland" "hyprlock", "neovim", "stow", "virt-manager")
+
+# Loop through the array and install each package
+for package in "${packages[@]}"
+do
+   sudo dnf install -y "$package"
+done
