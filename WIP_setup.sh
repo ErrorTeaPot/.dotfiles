@@ -13,7 +13,7 @@ do
    shopt -s nocaseglob
 
    if [ -d "$package" ]; then
-       stow "$package"
+       stow -v 1 "$package"
    fi
 
    # Disable case-insensitive pattern matching
