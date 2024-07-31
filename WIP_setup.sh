@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm"
 
 # Install the packages
 sudo dnf install $packages
