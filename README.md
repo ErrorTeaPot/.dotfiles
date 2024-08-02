@@ -9,7 +9,7 @@ Those are my dotfiles, there is the softwares I am curently using :
 - 🐈 Terminal : alacritty
 - 🐟 Shell : fish
 - 💫 Shell prompt : starship
-- 🐧 Linux distro : Fedora workstation
+- 🐧 Linux distro : Fedora workstation (moving to minimal everything netinst iso)
   
 There is also dotfiles from other softwares that i am not currently using but it is here for backup purposes.
 
@@ -18,6 +18,11 @@ There is also dotfiles from other softwares that i am not currently using but it
 
 # Installation
 
+I have created a script called "setup.sh" which is setting up some stuff. Basically, it installs the packages specified in the variable at the top and stow each package that have a folder in the .dotfiles repo. This makes the installation of the window manager, topbar, keyring and DM much easier.
+
+Some work still needs to be done, but there are the basics. Keep in mind that I am using it on Fedora workstation, if you are using another distro you may have to change the names of the installed packages along with the package manager used.
+
+---
 I am managing my dotfiles using [Stow]([URL](https://www.gnu.org/software/stow/)).
 This software allows to create symlinks that points to the dotfile you want to use. 
 
