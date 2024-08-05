@@ -35,4 +35,4 @@ sudo systemctl enable lightdm.service
 sudo systemctl set-default graphical.target
 
 # Set slick-greeter as lightdm greeter
-sudo echo "greeter-session=slick-greeter" >> /etc/lightdm/lightdm.conf
+sudo echo "greeter-session=slick-greeter" >> sudo tee /etc/lightdm/lightdm.conf
