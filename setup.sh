@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm lightdm-gtk wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm slick-greeter wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser"
 
 # Add Brave repo
 
@@ -33,3 +33,6 @@ sudo systemctl enable lightdm.service
 
 # Change the target for the graphical one
 sudo systemctl set-default graphical.target
+
+# Set slick-greeter as lightdm greeter
+echo "greeter-session=slick-greeter" >> /etc/lightdm/lightdm.conf
