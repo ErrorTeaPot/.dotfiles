@@ -1,13 +1,16 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm slick-greeter wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm slick-greeter wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
 
 # Add Brave repo
 
 sudo dnf install -y dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
+# Enable solopasha/hyprland copr repo
+sudo dnf copr enable -y solopasha/hyprland
 
 # Install the packages
 sudo dnf install -y $packages
