@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty sddm wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty gdm wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
 
 # Add Brave repo
 
@@ -30,10 +30,6 @@ do
 done
 
 stow -v 1 fonts fontconfig Wallpapers starship
-
-# Add the rose-pine theme to sddm
-sudo cp -r ./sddm-rose-pine/ /usr/share/sddm/themes/
-sudo stow -v 1 sddm -t /etc/sddm.conf.d/
 
 # Enable lightdm service
 sudo systemctl enable sddm.service
