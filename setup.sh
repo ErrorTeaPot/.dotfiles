@@ -32,8 +32,8 @@ done
 stow -v 1 fonts fontconfig Wallpapers starship
 
 # Add the rose-pine theme to sddm
-stow -v 1 sddm-rose-pine -t /usr/share/sddm/themes/
-stow -v 1 sddm -t /etc/sddm.conf.d/
+sudo stow -v 1 sddm-rose-pine -t /usr/share/sddm/themes/
+sudo stow -v 1 sddm -t /etc/sddm.conf.d/
 
 # Enable lightdm service
 sudo systemctl enable sddm.service
