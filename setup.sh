@@ -32,7 +32,7 @@ done
 stow -v 1 fonts fontconfig Wallpapers starship
 
 # Enable lightdm service
-sudo systemctl enable sddm.service
+sudo systemctl enable gdm.service
 
 # Change the target for the graphical one
 sudo systemctl set-default graphical.target
