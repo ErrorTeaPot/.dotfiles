@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty gdm wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm slick-greeter wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
 
 # Add Brave repo
 
@@ -32,7 +32,7 @@ done
 stow -v 1 fonts fontconfig Wallpapers starship
 
 # Enable lightdm service
-sudo systemctl enable gdm.service
+sudo systemctl enable lightdm.service
 
 # Change the target for the graphical one
 sudo systemctl set-default graphical.target
