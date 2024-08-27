@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of packages to install
-packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm slick-greeter wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
+packages="libsecret gnome-keyring fish hyprland hyprlock neovim stow virt-manager alacritty lightdm lightdm-gtk wofi grim network-manager-applet waybar google-noto-color-emoji-fonts dunst brave-browser hyprland"
 
 # Add Brave repo
 
