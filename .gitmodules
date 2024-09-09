@@ -1,3 +1,3 @@
 [submodule "exegol/.exegol/my-ressources/impacket"]
-	path = exegol/.exegol/my-ressources/impacket
+	path = exegol/.exegol/my-resources/impacket
 	url = https://github.com/fortra/impacket.git
