@@ -16,8 +16,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "One Dark"
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon"
   },
   "buffer_font_family": "terminal-font"
 }
