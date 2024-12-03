@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR ANDROID_NDK_ROOT:/home/errorteapot/Computer_stuff/tools/android\x2dndk\x2dr26d/
 SETUVAR --export CARGO_HOME:/home/errorteapot/\x2econfig/cargo
+SETUVAR --export EDITOR:/bin/nvim
 SETUVAR --export RUSTUP_HOME:/home/errorteapot/\x2econfig/rustup
 SETUVAR --export SSH_AUTH_SOCK:/run/user/1000/gcr/ssh
 SETUVAR --export XDG_CONFIG_HOME:/home/errorteapot/\x2econfig
