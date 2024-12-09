@@ -1,0 +1,15 @@
+theme = "rose_pine_dawn"
+
+[editor]
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "bar"
+select = "bar"
+
+[editor.lsp]
+enable=true
+display-inlay-hints = true
+auto-signature-help=true
+display-messages = true
