@@ -26,4 +26,4 @@ import = [
 	#"~/.config/alacritty/themes/monokai.toml"
 ]
 [colors]
-	cursor = {text = "CellBackground", cursor = "#FFFFFF"}
+	cursor = {text = "#575279", cursor = "#cecacd"}
