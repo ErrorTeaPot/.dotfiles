@@ -46,4 +46,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/errorteapot/\x2elocal/bin\x1e/home/errorteapot/\x2econfig/cargo/bin
+SETUVAR fish_user_paths:/home/errorteapot/Computer_stuff/BLK/TP1/bitcoin\x2d24\x2e0\x2e1/bin/\x1e/home/errorteapot/\x2enix\x2dprofile/bin\x1e/home/errorteapot/\x2elocal/bin\x1e/home/errorteapot/\x2econfig/cargo/bin
