@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Rosé Pine Dawn",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "terminal.integrated.defaultProfile.linux": "fish (2)"
+}

@@ -1,0 +1,9 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "g r",
+        "command": "vscode-neovim.send",
+        "args": "<C-\\><C-n>:lua vim.lsp.buf.references()<CR>",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+      }
+]

@@ -1,0 +1,30 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "g r",
+        "command": "vscode-neovim.send",
+        "args": "<C-\\><C-n>:lua vim.lsp.buf.references()<CR>",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+      },
+      {
+        "key": "alt+c",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+      },
+      {
+        "key": "alt+,",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+      },
+      {
+        "key": "alt+.",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+      },
+      {
+        "command": "editor.action.revealDefinition",
+        "key": "g d",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
+        //"args": "<C-]>"
+      }
+]

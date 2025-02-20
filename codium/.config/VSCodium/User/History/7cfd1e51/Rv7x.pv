@@ -1,0 +1,72 @@
+(* Protocole Needham-Schroeder *)
+(*--------------------
+  A -> B: {a, na}_pkB
+  B -> A: {nb, na}_pkA
+  A -> B: {nb}_pkB
+ ---------------------*)
+
+
+(* Types *)
+type skey.
+type pkey.
+type agent.
+
+(* Théorie équationnelle *)
+fun pk(skey):pkey.
+fun aenc(bitstring,pkey):bitstring.
+
+reduc forall x:bitstring, k:skey; adec(aenc(x,pk(k)), k) = x.
+
+
+(* Noms *)
+free ch: channel.
+
+free A, B, C:agent.
+
+free NB:bitstring [private]. (* utilisé pour le secret *)
+
+
+(* Évènements *)
+(* pour la question 5*)
+event BeginI(agent, agent, bitstring).
+event EndR(agent, agent, bitstring).
+(* ... (q6) *)
+
+(* Processus *)
+
+let Initiator(a:agent, b:agent, ska:skey, pkb:pkey) =
+  new na:bitstring;
+  out(ch, aenc((a, na), pkb));
+  (* ... *)
+
+
+let Responder(a:agent, b:agent, pka:pkey, skb:skey, nb:bitstring) =
+  in(ch, x:bitstring);
+  let (=a, na:bitstring) = adec(x, skb) in
+  (* ... *)
+
+(* Proprietes de securite *)
+
+(* Secret de NB *)
+query attacker(NB).
+
+
+(* Authentification (q5-6) *)
+(* query k:bitstring;  event(EndI(A, B, k)) ==> event(BeginR(A, B, k)). *)
+(* ... *)
+
+(* Processus principal *)
+
+process
+  new skA:skey;
+  new skB:skey;
+  new skC:skey;
+  let pkA = pk(skA) in
+  let pkB = pk(skB) in
+  let pkC = pk(skC) in
+  out(ch,pkA); out(ch,pkB); out(ch,skC);
+   ( !Initiator(A,B,skA,pkB) | !(new nb:bitstring; Responder(A,B,pkA,skB,nb))
+       | Responder(A,B,pkA,skB,NB)
+   (* ... *)
+   )
+   

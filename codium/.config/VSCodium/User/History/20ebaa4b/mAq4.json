@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Rosé Pine Dawn",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "terminal.integrated.defaultProfile.linux": "fish (2)",
+    "terminal.integrated.profiles.linux": {
+        
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    }
+}

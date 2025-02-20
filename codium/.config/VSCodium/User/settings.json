@@ -1,0 +1,36 @@
+{
+    "workbench.colorTheme": "Rosé Pine Dawn",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "terminal.integrated.defaultProfile.linux": "fish (2)",
+    "terminal.integrated.profiles.linux": {
+       "toolbox": {
+        "path": "toolbox enter Crypto"
+       }, 
+
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+    },
+    "terminal.integrated.automationProfile.windows": {},
+    "window.customTitleBarVisibility": "auto",
+    "window.commandCenter": false,
+    "vscode-neovim.compositeKeys": {},
+    "workbench.startupEditor": "none"
+}

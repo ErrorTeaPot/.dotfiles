@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Rosé Pine Dawn",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}
