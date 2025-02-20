@@ -194,24 +194,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
   -- [[ Basic Autocommands ]]
   --  See `:help lua-guide-autocommands`
 
-  local restore_cursor_augroup = vim.api.nvim_create_augroup('restore_cursor_shape_on_exit', { clear = true })
-
-  vim.api.nvim_create_autocmd({ 'VimLeave' }, {
-    group = restore_cursor_augroup,
-    desc = 'restore the cursor shape on exit of neovim',
-    command = 'set guicursor=a:ver20',
-  })
-
-  -- Highlight when yanking (copying) text
-  --  Try it with `yap` in normal mode
-  --  See `:help vim.highlight.on_yank()`
-  vim.api.nvim_create_autocmd('TextYankPost', {
-    desc = 'Highlight when yanking (copying) text',
-    group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-    callback = function()
-      vim.highlight.on_yank()
-    end,
-  })
+  require 'kickstart.autocmds'
 
   -- [[ Install `lazy.nvim` plugin manager ]]
   --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -609,9 +592,8 @@ P.S. You can delete this when you're done too. It's your config now! :)
           -- gopls = {},
           pyright = {},
           rust_analyzer = {},
-          solc = {},
-          tinymist = {},
-          ansiblels = {},
+          solc = {}, -- solitidy
+          tinymist = {}, -- Typst
           -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
           --
           -- Some languages (like typescript) have entire language plugins that can be useful:
