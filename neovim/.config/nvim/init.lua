@@ -309,7 +309,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
         -- Document existing key chains
         spec = {
           { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
-          { '<leader>d', group = '[D]ocument' },
+          { '<leader>d', group = '[D]ebug' },
           { '<leader>r', group = '[R]ename' },
           { '<leader>s', group = '[S]earch' },
           { '<leader>w', group = '[W]orkspace' },
@@ -398,7 +398,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
         vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
         vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
         vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-        vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
+        vim.keymap.set('n', '<leader>sS', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
         vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
         vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
         vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
@@ -508,7 +508,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
 
             -- Fuzzy find all the symbols in your current document.
             --  Symbols are things like variables, functions, types, etc.
-            map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+            map('<leader>ss', require('telescope.builtin').lsp_document_symbols, '[S]earch [S]ymbols')
 
             -- Fuzzy find all the symbols in your current workspace.
             --  Similar to document symbols, except searches over your entire project.
