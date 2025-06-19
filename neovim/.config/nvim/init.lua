@@ -280,6 +280,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
           { '<leader>w', group = '[W]orkspace' },
           { '<leader>t', group = '[T]oggle' },
           { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+          { '<leader>a', group = 'H[A]rpoon' },
         },
       },
     },
