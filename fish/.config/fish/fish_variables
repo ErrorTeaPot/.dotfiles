@@ -5,7 +5,7 @@ SETUVAR --export EDITOR:/bin/nvim
 SETUVAR --export RUSTUP_HOME:/home/errorteapot/\x2econfig/rustup
 SETUVAR --export SSH_AUTH_SOCK:/run/user/1000/gcr/ssh
 SETUVAR --export XDG_CONFIG_HOME:/home/errorteapot/\x2econfig
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:737994
 SETUVAR fish_color_cancel:e78284
 SETUVAR fish_color_command:8caaee
