@@ -6,7 +6,7 @@ else
   vim.g.maplocalleader = ' '
   vim.g.have_nerd_font = true
 
-  require 'kickstart.options'
+  require 'config.options'
 
   -- [[ Install `lazy.nvim` plugin manager ]]
   --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -136,8 +136,8 @@ else
     },
 
     -- Lazy loading
-    { import = 'kickstart.plugins' },
-    { import = 'custom.plugins' },
+    { import = 'config.plugins' },
+    -- { import = 'custom.plugins' },
   }, {
     ui = {
       -- If you are using a Nerd Font: set icons to an empty table which will use the
@@ -160,8 +160,8 @@ else
     },
   })
 
-  require 'kickstart.autocmds'
-  require 'kickstart.keymaps'
+  require 'config.autocmds'
+  require 'config.keymaps'
 
   -- The line beneath this is called `modeline`. See `:help modeline`
   -- vim: ts=2 sts=2 sw=2 et
