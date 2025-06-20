@@ -60,3 +60,6 @@ vim.opt.scrolloff = 10
 
 -- Set highlight on search
 vim.opt.hlsearch = true
+
+-- Default to light theme
+vim.opt.background = 'light'
