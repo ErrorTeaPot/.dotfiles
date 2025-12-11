@@ -1,4 +1,5 @@
 return {
+  --[[
   'olimorris/codecompanion.nvim',
   config = function()
     require('codecompanion').setup {
@@ -39,7 +40,7 @@ return {
         mistral = function()
           return require('codecompanion.adapters').extend('mistral', {
             env = {
-              api_key = 'Rm8LVsBPtkS4XCqq4kuwrCWfkX4OnKfA',
+              api_key = 'changeme',
               url = 'https://codestral.mistral.ai',
             },
             schema = {
@@ -77,4 +78,6 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
   },
+  ]]
+  --
 }
