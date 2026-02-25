@@ -2,7 +2,8 @@ return { -- LSP Configuration & Plugins
   'neovim/nvim-lspconfig',
   dependencies = {
     { 'mason-org/mason.nvim', opts = {} },
-    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    { 'mason-org/mason-lspconfig.nvim', opts = {} },
+    { 'WhoIsSethDaniel/mason-tool-installer.nvim', opts = {} },
     { 'j-hui/fidget.nvim', opts = {} },
 
     -- Allows extra capabilities provided by blink.cmp
@@ -81,14 +82,17 @@ return { -- LSP Configuration & Plugins
       },
     }
 
+    -- Install LSPs with mason for bridge mapping
     local ensure_installed = vim.tbl_keys(servers or {})
-    vim.list_extend(ensure_installed, {
+    require('mason-lspconfig').setup { ensure_installed = ensure_installed }
+
+    -- Install other tools (linter, DAP, Formatters)
+    local tools = {
       'stylua',
       'clang-format',
       'markdownlint',
-    })
-
-    require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+    }
+    require('mason-tool-installer').setup { ensure_installed = tools }
 
     -- config and enable each server
     for name, server in pairs(servers) do
