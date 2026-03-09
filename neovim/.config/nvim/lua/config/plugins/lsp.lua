@@ -68,7 +68,30 @@ return { -- LSP Configuration & Plugins
 
     -- LSP servers & config
     local servers = {
-      clangd = {},
+      clangd = {
+        cmd = {
+          'clangd',
+          '--background-index',
+          '--clang-tidy',
+          '--completion-style=detailed',
+          '--header-insertion=never',
+        },
+        settings = {
+          ['clangd'] = {
+            -- Activer l'auto-complétion détaillée
+            completion = {
+              detailedLabel = true,
+            },
+            -- Activer les diagnostics avancés
+            diagnostics = {
+              clangTidy = {
+                add = { 'modernize-*', 'performance-*', 'bugprone-*', 'readability-*', 'portability-*', 'clang-analyzer-*' },
+                remove = { 'modernize-use-trailing-return-type' },
+              },
+            },
+          },
+        },
+      },
       pyright = {},
       rust_analyzer = {
         settings = {
