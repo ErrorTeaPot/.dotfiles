@@ -86,7 +86,6 @@ return { -- LSP Configuration & Plugins
             diagnostics = {
               clangTidy = {
                 add = { 'modernize-*', 'performance-*', 'bugprone-*', 'readability-*', 'portability-*', 'clang-analyzer-*' },
-                remove = { 'modernize-use-trailing-return-type' },
               },
             },
           },
@@ -103,6 +102,7 @@ return { -- LSP Configuration & Plugins
           },
         },
       },
+      marksman = {},
     }
 
     -- Install LSPs with mason for bridge mapping
@@ -112,7 +112,6 @@ return { -- LSP Configuration & Plugins
     -- Install other tools (linter, DAP, Formatters)
     local tools = {
       'stylua',
-      'clang-format',
       'markdownlint',
     }
     require('mason-tool-installer').setup { ensure_installed = tools }
