@@ -113,7 +113,6 @@ return { -- LSP Configuration & Plugins
     local tools = {
       'stylua',
       'markdownlint',
-      'sonarlint-language-server',
     }
     require('mason-tool-installer').setup { ensure_installed = tools }
 
