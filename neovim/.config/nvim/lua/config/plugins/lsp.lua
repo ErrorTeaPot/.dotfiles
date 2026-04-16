@@ -103,6 +103,7 @@ return { -- LSP Configuration & Plugins
         },
       },
       marksman = {},
+      terraformls = {},
     }
 
     -- Install LSPs with mason for bridge mapping
