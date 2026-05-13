@@ -1,10 +1,6 @@
--- Set <space> as the leader key
--- See `:h mapleader`
--- NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 require("config.remap")
 
 -- OPTIONS
---
 -- See `:h vim.o`
 -- NOTE: You can change these options as you wish!
 -- For more options, you can see `:h option-list`
@@ -38,27 +34,7 @@ vim.o.list = true -- Show <tab> and trailing spaces.
 -- instead raise a dialog asking if you wish to save the current file(s). See `:h 'confirm'`
 vim.o.confirm = true
 
--- KEYMAPS
---
--- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
-
--- Use <Esc> to exit terminal mode
-vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
-
--- Map <A-j>, <A-k>, <A-h>, <A-l> to navigate between windows in any modes
-vim.keymap.set({ 't', 'i' }, '<A-h>', '<C-\\><C-n><C-w>h')
-vim.keymap.set({ 't', 'i' }, '<A-j>', '<C-\\><C-n><C-w>j')
-vim.keymap.set({ 't', 'i' }, '<A-k>', '<C-\\><C-n><C-w>k')
-vim.keymap.set({ 't', 'i' }, '<A-l>', '<C-\\><C-n><C-w>l')
-vim.keymap.set({ 'n' }, '<A-h>', '<C-w>h')
-vim.keymap.set({ 'n' }, '<A-j>', '<C-w>j')
-vim.keymap.set({ 'n' }, '<A-k>', '<C-w>k')
-vim.keymap.set({ 'n' }, '<A-l>', '<C-w>l')
-
-vim.keymap.set({ 'n' }, "<leader>ff", function() require('mini.pick').builtin.files() end,{ desc = 'Find File' })
-
 -- AUTOCOMMANDS (EVENT HANDLERS)
---
 -- See `:h lua-guide-autocommands`, `:h autocmd`, `:h nvim_create_autocmd()`
 
 -- Highlight when yanking (copying) text.
@@ -71,7 +47,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- USER COMMANDS: DEFINE CUSTOM COMMANDS
---
 -- See `:h nvim_create_user_command()` and `:h user-commands`
 
 -- Create a command `:GitBlameLine` that print the git blame for the current line
@@ -82,7 +57,6 @@ vim.api.nvim_create_user_command('GitBlameLine', function()
 end, { desc = 'Print the git blame for the current line' })
 
 -- PLUGINS
---
 -- See `:h :packadd`, `:h vim.pack`
 
 -- Add the "nohlsearch" package to automatically disable search highlighting after
@@ -93,38 +67,7 @@ vim.cmd('packadd! nohlsearch')
 vim.pack.add({
   -- Quickstart configs for LSP
   'https://github.com/neovim/nvim-lspconfig',
-  -- Fuzzy picker
-  --'https://github.com/ibhagwan/fzf-lua',
-  'https://github.com/nvim-mini/mini.pick',
-  -- Autocompletion
-  'https://github.com/nvim-mini/mini.completion',
-  -- Enhanced quickfix/loclist
-  'https://github.com/stevearc/quicker.nvim',
-  -- Git integration
-  'https://github.com/lewis6991/gitsigns.nvim',
-  -- Shows up keymaps
-  'https://github.com/nvim-mini/mini.clue',
 })
 
---require('fzf-lua').setup { fzf_colors = true }
-require('mini.pick').setup {}
-require('mini.completion').setup {}
-require('quicker').setup {}
-require('gitsigns').setup {}
-require('mini.clue').setup {
-  window = {
-    delay = 0,
-  },
-  triggers = {
-    { mode = 'n', keys = '<Leader>' },
-    { mode = 'x', keys = '<Leader>' },
-  },
-  clues = {
-    -- Clues intégrées pour les commandes natives utiles
-    require('mini.clue').gen_clues.g(),
-    require('mini.clue').gen_clues.marks(),
-    require('mini.clue').gen_clues.registers(),
-    require('mini.clue').gen_clues.windows(),
-    require('mini.clue').gen_clues.z(),
-  },
-}
+-- Import plugins from lua/config/plugins
+require('config.plugins')
