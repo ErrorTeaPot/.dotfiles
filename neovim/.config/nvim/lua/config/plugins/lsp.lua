@@ -104,6 +104,7 @@ return { -- LSP Configuration & Plugins
       },
       marksman = {},
       terraformls = {},
+      nil_ls = {},
     }
 
     -- Install LSPs with mason for bridge mapping
@@ -114,6 +115,7 @@ return { -- LSP Configuration & Plugins
     local tools = {
       'stylua',
       'markdownlint',
+      'nixfmt',
     }
     require('mason-tool-installer').setup { ensure_installed = tools }
 
