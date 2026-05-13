@@ -28,6 +28,10 @@
       "rev": "6a961effd67f6130d36df6d1c05c48c739796dd2",
       "src": "https://github.com/rose-pine/neovim"
     },
+    "nvim-autopairs": {
+      "rev": "7b9923abad60b903ece7c52940e1321d39eccc79",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
     "nvim-lspconfig": {
       "rev": "75e49cfa588a89ca667d767c0afef3ceac205faa",
       "src": "https://github.com/neovim/nvim-lspconfig"
