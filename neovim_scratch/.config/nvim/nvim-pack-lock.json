@@ -1,0 +1,36 @@
+{
+  "plugins": {
+    "fzf-lua": {
+      "rev": "97376e364f51f1b5ae3efaa3eb2e929430ca8419",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "gitsigns.nvim": {
+      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "mini.clue": {
+      "rev": "f6978fb031023ee0b0aeb2abdb44abb87577bf38",
+      "src": "https://github.com/nvim-mini/mini.clue"
+    },
+    "mini.completion": {
+      "rev": "6937ff1d7bf47ab58046c6685cc9057aa481ecb2",
+      "src": "https://github.com/nvim-mini/mini.completion"
+    },
+    "mini.pick": {
+      "rev": "975e398570dd15696575c5374f94e78fd29a7a69",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
+    "nvim-lspconfig": {
+      "rev": "75e49cfa588a89ca667d767c0afef3ceac205faa",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "quicker.nvim": {
+      "rev": "063cc44da1eef8681bbd653b29d3bc961780886a",
+      "src": "https://github.com/stevearc/quicker.nvim"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
+    }
+  }
+}
