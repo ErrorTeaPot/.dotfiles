@@ -46,6 +46,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Restore cursor shape
+local restore_cursor_augroup = vim.api.nvim_create_augroup('restore_cursor_shape_on_exit', { clear = true })
+vim.api.nvim_create_autocmd({ 'VimLeave' }, {
+  group = restore_cursor_augroup,
+  desc = 'restore the cursor shape on exit of neovim',
+  command = 'set guicursor=a:ver20',
+})
+
 -- USER COMMANDS: DEFINE CUSTOM COMMANDS
 -- See `:h nvim_create_user_command()` and `:h user-commands`
 
