@@ -1,5 +1,8 @@
 vim.pack.add({'https://github.com/nvim-mini/mini.clue'})
-require('mini.clue').setup {
+
+local miniclue = require('mini.clue')
+
+miniclue.setup {
   window = {
     delay = 0,
   },
@@ -9,10 +12,14 @@ require('mini.clue').setup {
   },
   clues = {
     -- Clues intégrées pour les commandes natives utiles
-    require('mini.clue').gen_clues.g(),
-    require('mini.clue').gen_clues.marks(),
-    require('mini.clue').gen_clues.registers(),
-    require('mini.clue').gen_clues.windows(),
-    require('mini.clue').gen_clues.z(),
+    miniclue.gen_clues.g(),
+    miniclue.gen_clues.marks(),
+    miniclue.gen_clues.registers(),
+    miniclue.gen_clues.windows(),
+    miniclue.gen_clues.z(),
+    
+    -- Nos clues personnalisées par groupes
+    { mode = 'n', keys = '<Leader>f', desc = '+Find (Telescope)' },
+    { mode = 'n', keys = '<Leader>t', desc = '+Tabs' },
   },
 }

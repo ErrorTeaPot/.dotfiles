@@ -1,4 +1,6 @@
 require("config.remap")
+require("config.lsp")
+require("config.tabs")
 
 -- OPTIONS
 -- See `:h vim.o`
@@ -46,12 +48,13 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- Restore cursor shape
-local restore_cursor_augroup = vim.api.nvim_create_augroup('restore_cursor_shape_on_exit', { clear = true })
-vim.api.nvim_create_autocmd({ 'VimLeave' }, {
-  group = restore_cursor_augroup,
+-- Restore cursor shape (solution simple et directe)
+vim.api.nvim_create_autocmd('VimLeave', {
   desc = 'restore the cursor shape on exit of neovim',
-  command = 'set guicursor=a:ver20',
+  callback = function()
+    vim.cmd('set guicursor=')
+    vim.fn.nvim_ui_send('\033[2 q')
+  end
 })
 
 -- USER COMMANDS: DEFINE CUSTOM COMMANDS
