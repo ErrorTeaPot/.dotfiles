@@ -114,8 +114,8 @@ return { -- LSP Configuration & Plugins
     -- Install other tools (linter, DAP, Formatters)
     local tools = {
       'stylua',
-      'markdownlint',
       'nixfmt',
+      'markdownlint-cli2',
     }
     require('mason-tool-installer').setup { ensure_installed = tools }
 
