@@ -9,7 +9,7 @@
       "src": "https://github.com/j-hui/fidget.nvim"
     },
     "fzf-lua": {
-      "rev": "97376e364f51f1b5ae3efaa3eb2e929430ca8419",
+      "rev": "71b45a044c4ef6ecb1910880ef642d5a0e1c02e9",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -33,19 +33,19 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.clue": {
-      "rev": "f6978fb031023ee0b0aeb2abdb44abb87577bf38",
+      "rev": "0e37cddd6307eb40248e4226be65304e85df1d18",
       "src": "https://github.com/nvim-mini/mini.clue"
     },
     "mini.completion": {
-      "rev": "6937ff1d7bf47ab58046c6685cc9057aa481ecb2",
+      "rev": "04abe6fc7860858785ba63c435d76bf5b8b64b5f",
       "src": "https://github.com/nvim-mini/mini.completion"
     },
     "mini.pick": {
-      "rev": "975e398570dd15696575c5374f94e78fd29a7a69",
+      "rev": "4522d9ab65224675df2cf1ede8c12f0410aae2be",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
     "neovim": {
-      "rev": "6a961effd67f6130d36df6d1c05c48c739796dd2",
+      "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
       "src": "https://github.com/rose-pine/neovim"
     },
     "nvim-autopairs": {
@@ -53,7 +53,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-lspconfig": {
-      "rev": "75e49cfa588a89ca667d767c0afef3ceac205faa",
+      "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "plenary.nvim": {
@@ -61,11 +61,11 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "quicker.nvim": {
-      "rev": "063cc44da1eef8681bbd653b29d3bc961780886a",
+      "rev": "1c9322b7e2967472548ba9bccd1ccd40e49d0a49",
       "src": "https://github.com/stevearc/quicker.nvim"
     },
     "telescope.nvim": {
-      "rev": "f04ab730b8f9c6bf3f54a206d0dcddfd70c52d59",
+      "rev": "7d324792b7943e4aa16ad007212e6acc6f9fe335",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "which-key.nvim": {
