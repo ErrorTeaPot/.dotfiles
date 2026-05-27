@@ -1,6 +1,7 @@
 require("config.remap")
 require("config.lsp")
 require("config.tabs")
+require("config.autocomplete_and_snippets")
 
 -- OPTIONS
 -- See `:h vim.o`

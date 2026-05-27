@@ -132,23 +132,8 @@ require("mason-tool-installer").setup({
 -- Enable inlay hints
 vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled)
 
--- Configure LSP capabilities for completions (native)
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion = {
-	completionItem = {
-		snippetSupport = true,
-		preselectSupport = true,
-		insertReplaceSupport = true,
-		labelDetailsSupport = true,
-		deprecatedSupport = true,
-		commitCharactersSupport = true,
-		tagSupport = { valueSet = { 1 } },
-		resolveSupport = { properties = { 'documentation', 'detail', 'additionalTextEdits' } },
-	},
-}
-
 for name, server in pairs(servers) do
-	server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+	--server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
 	vim.lsp.config(name, server)
 	vim.lsp.enable(name)
 end
