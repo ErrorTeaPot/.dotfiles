@@ -2,12 +2,12 @@ vim.pack.add({ "https://github.com/stevearc/conform.nvim" })
 require("conform").setup({
 	notify_on_error = false,
 	format_on_save = function(bufnr)
-		-- You can specify filetypes to autoformat on save here:
-		local enabled_filetypes = {
-			lua = true,
-			-- python = true,
+		-- Enable autoformat for all filetypes except those in the disabled list
+		local disabled_filetypes = {
+			-- Add filetypes to disable autoformat here
+			-- Example: txt = true,
 		}
-		if enabled_filetypes[vim.bo[bufnr].filetype] then
+		if not disabled_filetypes[vim.bo[bufnr].filetype] then
 			return { timeout_ms = 500 }
 		else
 			return nil
