@@ -27,7 +27,7 @@ vim.opt.showtabline = 2 -- Toujours afficher la ligne d'onglets
 vim.opt.tabpagemax = 50 -- Nombre maximum d'onglets
 
 -- Fonction pour renommer un onglet
-function RenameTab()
+local function RenameTab()
 	local new_name = vim.fn.input("Nouveau nom pour l'onglet: ")
 	if new_name ~= "" then
 		vim.cmd("tabrename " .. new_name)
