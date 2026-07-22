@@ -82,11 +82,5 @@ end, { desc = "Print the git blame for the current line" })
 -- 'updatetime' and when going to insert mode.
 vim.cmd("packadd! nohlsearch")
 
--- Install third-party plugins via "vim.pack.add()".
-vim.pack.add({
-	-- Quickstart configs for LSP
-	"https://github.com/neovim/nvim-lspconfig",
-})
-
 -- Import plugins from lua/config/plugins
 require("config.plugins")
