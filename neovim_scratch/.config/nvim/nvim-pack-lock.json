@@ -66,13 +66,13 @@
       "rev": "0e37cddd6307eb40248e4226be65304e85df1d18",
       "src": "https://github.com/nvim-mini/mini.clue"
     },
-    "mini.completion": {
-      "rev": "04abe6fc7860858785ba63c435d76bf5b8b64b5f",
-      "src": "https://github.com/nvim-mini/mini.completion"
-    },
     "mini.pick": {
       "rev": "4522d9ab65224675df2cf1ede8c12f0410aae2be",
       "src": "https://github.com/nvim-mini/mini.pick"
+    },
+    "mini.statusline": {
+      "rev": "127997ebef7ef632161203b960c5ef9d158f4810",
+      "src": "https://github.com/nvim-mini/mini.statusline"
     },
     "neovim": {
       "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
