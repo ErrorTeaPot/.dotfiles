@@ -3,13 +3,11 @@ vim.pack.add({ "https://github.com/j-hui/fidget.nvim" })
 vim.pack.add({
 	"https://github.com/neovim/nvim-lspconfig",
 	"https://github.com/mason-org/mason.nvim",
-	"https://github.com/mason-org/mason-lspconfig.nvim",
 	"https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
 })
 vim.cmd.packadd("fidget.nvim")
 vim.cmd.packadd("nvim-lspconfig")
 vim.cmd.packadd("mason.nvim")
-vim.cmd.packadd("mason-lspconfig.nvim")
 vim.cmd.packadd("mason-tool-installer.nvim")
 
 require("fidget").setup({})
@@ -65,13 +63,24 @@ local servers = {
 	},
 }
 
--- stylua est un formatter, pas un LSP — on l'installe via mason séparément
-local ensure_installed = vim.tbl_keys(servers)
-vim.list_extend(ensure_installed, { "stylua", "markdownlint-cli2" })
-require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+-- Noms des paquets Mason : ils ne correspondent pas toujours aux noms de serveur LSP
+-- (ex. rust_analyzer -> rust-analyzer, lua_ls -> lua-language-server)
+require("mason-tool-installer").setup({
+	ensure_installed = {
+		"clangd",
+		"pyright",
+		"rust-analyzer",
+		"marksman",
+		"nil",
+		"terraform-ls",
+		"lua-language-server",
+		"stylua",
+		"markdownlint-cli2",
+	},
+})
 
--- Inlay hints (correctement)
-vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+-- Inlay hints
+vim.lsp.inlay_hint.enable(true)
 
 -- Diagnostics
 vim.diagnostic.config({
