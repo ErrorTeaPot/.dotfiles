@@ -76,6 +76,7 @@ require("mason-tool-installer").setup({
 		"lua-language-server",
 		"stylua",
 		"markdownlint-cli2",
+		"tree-sitter-cli",
 	},
 })
 
