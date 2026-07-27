@@ -17,9 +17,12 @@ miniclue.setup {
     miniclue.gen_clues.registers(),
     miniclue.gen_clues.windows(),
     miniclue.gen_clues.z(),
-    
+
     -- Nos clues personnalisées par groupes
     { mode = 'n', keys = '<Leader>f', desc = '+Find (Telescope)' },
     { mode = 'n', keys = '<Leader>t', desc = '+Tabs' },
+    { mode = 'n', keys = '<Leader>c', desc = '+Code (LSP)' },
+    { mode = 'x', keys = '<Leader>c', desc = '+Code (LSP)' },
+    { mode = 'n', keys = '<Leader>l', desc = '+Git (LazyGit)' },
   },
 }
