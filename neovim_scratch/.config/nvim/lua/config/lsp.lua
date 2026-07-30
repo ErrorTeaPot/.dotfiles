@@ -102,11 +102,31 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
 	callback = function(ev)
 		local opts = { buffer = ev.buf }
-		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, vim.tbl_extend("force", opts, { desc = "[G]oto [D]eclaration" }))
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, vim.tbl_extend("force", opts, { desc = "[G]oto [D]efinition" }))
+		vim.keymap.set(
+			"n",
+			"gD",
+			vim.lsp.buf.declaration,
+			vim.tbl_extend("force", opts, { desc = "[G]oto [D]eclaration" })
+		)
+		vim.keymap.set(
+			"n",
+			"gd",
+			vim.lsp.buf.definition,
+			vim.tbl_extend("force", opts, { desc = "[G]oto [D]efinition" })
+		)
 		vim.keymap.set("n", "K", vim.lsp.buf.hover, vim.tbl_extend("force", opts, { desc = "Hover Documentation" }))
-		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, vim.tbl_extend("force", opts, { desc = "[G]oto [I]mplementation" }))
-		vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, vim.tbl_extend("force", opts, { desc = "Signature Documentation" }))
+		vim.keymap.set(
+			"n",
+			"gi",
+			vim.lsp.buf.implementation,
+			vim.tbl_extend("force", opts, { desc = "[G]oto [I]mplementation" })
+		)
+		vim.keymap.set(
+			"n",
+			"<C-k>",
+			vim.lsp.buf.signature_help,
+			vim.tbl_extend("force", opts, { desc = "Signature Documentation" })
+		)
 		vim.keymap.set(
 			"n",
 			"<leader>cd",
@@ -125,7 +145,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.lsp.buf.code_action,
 			vim.tbl_extend("force", opts, { desc = "[C]ode [A]ction" })
 		)
-		vim.keymap.set("n", "gr", vim.lsp.buf.references, vim.tbl_extend("force", opts, { desc = "[G]oto [R]eferences" }))
+		vim.keymap.set(
+			"n",
+			"gr",
+			vim.lsp.buf.references,
+			vim.tbl_extend("force", opts, { desc = "[G]oto [R]eferences" })
+		)
 		vim.keymap.set("n", "<leader>cf", function()
 			vim.lsp.buf.format({ async = true })
 		end, vim.tbl_extend("force", opts, { desc = "[C]ode [F]ormat" }))
