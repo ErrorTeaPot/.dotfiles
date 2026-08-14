@@ -35,6 +35,12 @@ vim.o.list = true -- Show <tab> and trailing spaces.
 
 vim.opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" }
 
+-- Compiler Rust avec :make (utilise le compiler "cargo" fourni par le runtime
+-- Neovim, détecté automatiquement quand un Cargo.toml est trouvé). Sans ce
+-- réglage, `:make` seul lancerait juste `cargo` (aide) : il faudrait taper
+-- `:make build` à chaque fois. Voir `:h compiler-cargo` et `runtime/compiler/cargo.vim`.
+vim.g.cargo_makeprg_params = "build"
+
 -- If performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s). See `:h 'confirm'`
 vim.o.confirm = true
@@ -56,6 +62,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.hl.on_yank()
 	end,
+})
+
+-- Ouvrir automatiquement la quickfix après :make (comportement suggéré par
+-- `:h :make` mais non activé par défaut).
+vim.api.nvim_create_autocmd("QuickFixCmdPost", {
+	desc = "Open the quickfix window after :make",
+	pattern = "make",
+	command = "cwindow",
 })
 
 -- Restore cursor shape (solution simple et directe)
